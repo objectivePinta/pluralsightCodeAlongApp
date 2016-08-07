@@ -36,6 +36,7 @@ CoursesPage.propTypes = {
 };
 
 function mapStateToProps(state, ownProps) {
+
   return {
     courses: state.courses //courses because that's the shorthand form in the root reducer for the courseReducer
   };
