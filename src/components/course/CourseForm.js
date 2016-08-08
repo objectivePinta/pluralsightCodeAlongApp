@@ -13,10 +13,10 @@ const CourseForm = ({course,allAuthors,onSave,onChange,loading,errors})=>
       onChange={onChange} error={errors.authorId}/>
       <TextInput name="category" label="Category" value={course.category} onChange={onChange} error={errors.category}/>
       <TextInput name="length" label="Length" value={course.length} onChange={onChange} error={errors.length}/>
-      <input type="submit" disabled={loading} value={loading? 'saving..':'Save'} className="btn btn-primary" onClick={onSave}/>
+      <input type="submit" disabled={loading} value={loading? 'Saving..':'Save'} className="btn btn-primary" onClick={onSave}/>
     </form>
   );
-}
+};
 
 //course,allAuthors,onSave,onChange,loading,errors
 CourseForm.propTypes = {
